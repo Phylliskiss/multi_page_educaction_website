@@ -17,6 +17,11 @@ body{
     color: white;
     margin-inline: 2rem;
 }
+
+nav {
+    align-self: center;
+}
+
 nav a{
     color: white;
     text-decoration: none;
