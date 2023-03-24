@@ -12,17 +12,23 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 2vh;
+    /* padding: 10px 10% 0 5px; */
 }
 
 header h1 {
     align-self: center;
 }
-
 body{
-    background-color: hwb(240 36% 9%);
+    background-color: #0c1022;
     color: white;
-    margin-inline: 2rem;
+    
 }
+
+header,.hero-section,.categories-section
+{
+    margin-inline: 6rem;
+}
+
 
 nav {
     align-self: center;
@@ -51,6 +57,43 @@ a:hover{
     display: none;
 }
 
+.hero-section
+{
+    display: flex;
+}
+
+.hero-section h1 {
+    font-size: 2.25rem;
+
+}
+
+.home-content{
+    align-self: center;
+}
+
+.home-content p
+{
+    margin-block: 2rem;
+    line-height: 1.8;
+}
+
+.button
+{
+    background-color: orangered;
+    border-color: transparent;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.button:hover
+{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
 @media screen and (max-width:425px) {
     .desktop-nav {
         display: none;
@@ -69,7 +112,7 @@ a:hover{
         background-color: rgba(0, 0, 0, 0.71);
     }
 
-    .mobile-nav {
+     .mobile-nav {
         display: block;
         position: absolute;
         top: 0;
@@ -77,7 +120,7 @@ a:hover{
         height: 100%;
         width: 70%;
         background-color: red;
-    }
+    } 
 
     .mobile-nav a {
         display: flex;
@@ -92,13 +135,16 @@ a:hover{
         align-self: center;
     }
 
+    .hero-section
+    {
+        display: block;
+    }
 
     
-
-
-
-
 }
+
+
+
 
 
 
