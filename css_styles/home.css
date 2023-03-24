@@ -1,4 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -69,6 +70,10 @@
 
         }
 
+        .image-container img {
+            width: 600px;
+        }
+
         .home-content{
             align-self: center;
         }
@@ -96,7 +101,20 @@
         }
 
 
-        @media screen and (max-width:425px) {
+        @media screen and (max-width:768px) {
+            header,.hero-section,.categories-section
+            {
+                margin-inline: 1rem;
+            }
+
+            .hero-section {
+                margin-top: 7.5rem;
+            }
+
+            .hero-section {
+                text-align: center;
+            }
+
             .desktop-nav {
                 display: none;
             }
@@ -106,7 +124,7 @@
             }
 
             .transparent-background {
-                position: absolute;
+                position: fixed;
                 width: 100%;
                 height: 100%;
                 top: 0;
@@ -121,12 +139,16 @@
                 right: 0;
                 height: 100%;
                 width: 70%;
-                background-color: red;
+                background-color: #FCF6F5FF;
+                color: #0c1022;
             } 
 
             .mobile-nav a {
                 display: flex;
                 margin-top: 1.5rem;
+                color: #0c1022;
+                font-size: 1.75rem;
+                font-weight: 400;
             }
 
             .menu-close {
@@ -140,6 +162,10 @@
             .hero-section
             {
                 display: block;
+            }
+
+            .image-container img {
+                width: 90vw;
             }
 
             
