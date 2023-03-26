@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,6 @@
             display: flex;
             justify-content: space-between;
             margin-top: 2vh;
-            /* padding: 10px 10% 0 5px; */
         }
 
         header h1 {
@@ -27,7 +26,8 @@
 
         header,.hero-section,.categories-section
         {
-            margin-inline: 6rem;
+            max-width: 78rem;
+            margin-inline: auto;
         }
 
 
@@ -39,21 +39,24 @@
             color: white;
             text-decoration: none;
             margin-left: 2rem ;
-
+            font-weight: 500;
         }
 
         a:hover{
-            color: rgb(239, 243, 14);
+            color: rgb(255, 86, 25);
+            transition: color 500ms;
         }
 
         .menu-open {
             font-size: 2.5rem; 
             display: none;
         }
+
         .transparent-background {
             display: none;
         }
-        .mobile-nav {
+
+        .mobile-nav-container {
             display: none;
         }
 
@@ -62,16 +65,13 @@
 
         .hero-section
         {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .hero-section h1 {
-            font-size: 2.25rem;
+            font-size: 2.5rem;
 
-        }
-
-        .image-container img {
-            width: 600px;
         }
 
         .home-content{
@@ -80,24 +80,32 @@
 
         .home-content p
         {
-            margin-block: 2rem;
+            margin-block: 2rem 1.5rem;
             line-height: 1.8;
         }
 
         .button
         {
-            background-color: orangered;
-            border-color: transparent;
-            padding: 1rem;
+            background-color: rgb(200, 54, 0);
+            border: 1px solid transparent;
+            padding: 1rem 1.5rem;
             color: #fff;
             cursor: pointer;
+            font-size: 1.5ch;
+            transition: all 200ms;
         }
 
 
         .button:hover
         {
             background-color: transparent;
-            border-color: #fff;
+            outline: transparent;
+            border: 1px solid #fff;
+            transform: translateY(5%);
+        }
+
+        .image-container img {
+            transform: translate(7.5%, 1%);
         }
 
 
@@ -108,7 +116,7 @@
             }
 
             .hero-section {
-                margin-top: 7.5rem;
+                margin-top: 1.5rem;
             }
 
             .hero-section {
@@ -120,7 +128,8 @@
             }
 
             .menu-open {
-                display:block;
+                display: block;
+                transform: translateY(-7%);
             }
 
             .transparent-background {
@@ -130,9 +139,10 @@
                 top: 0;
                 right: 0;
                 background-color: rgba(0, 0, 0, 0.71);
+                z-index: 1000;
             }
 
-            .mobile-nav {
+            .mobile-nav-container {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -143,9 +153,14 @@
                 color: #0c1022;
             } 
 
-            .mobile-nav a {
+            .mobile-nav {
                 display: flex;
-                margin-top: 1.5rem;
+                flex-direction: column;
+                gap: 3rem;
+                margin-top: 6rem;
+            }
+
+            .mobile-nav a {
                 color: #0c1022;
                 font-size: 1.75rem;
                 font-weight: 400;
@@ -155,17 +170,30 @@
                 font-size: 2.5rem;
                 display: flex;
                 justify-content: flex-end;
-                margin-right: 2rem;
+                margin-right: 1rem;
+                margin-top: 2vh;
                 align-self: center;
             }
 
             .hero-section
             {
-                display: block;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section h1 {
+                font-size: 8vw;
+            }
+
+            .image-container {
+                order: -1;
             }
 
             .image-container img {
                 width: 90vw;
+                z-index: -1000;
+                transform: translate(0);
+                order: -1;
             }
 
             
