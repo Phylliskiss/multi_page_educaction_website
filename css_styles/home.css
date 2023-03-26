@@ -24,7 +24,7 @@
             
         }
 
-        header,.hero-section,.categories-section
+        header,.hero-section, .main-categories-container
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -113,6 +113,48 @@
             transform: translate(7.5%, 1%);
         }
 
+/* Categories section styles */
+        .categories-section {
+            background-color: rgb(149, 185, 248);
+        }
+
+        .main-categories-container {
+            display: flex;
+        }
+
+        .card {
+            background-color: rgb(255, 21, 0);
+            border-radius: 2rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .categories-content {
+            padding-block: 4rem;
+        }
+
+        .card h4, .categories-content p {
+            margin-block: 1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            position: relative;
+            top: 5rem;
+        }
+
+        .card p {
+            line-height: 1.5;
+            font-size: 0.85rem;
+        }
+
+
+
+
+
+
+    
 
         @media screen and (max-width:768px) {
             header,.hero-section,.categories-section
