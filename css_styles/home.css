@@ -12,7 +12,13 @@
         header {
             display: flex;
             justify-content: space-between;
-            margin-top: 2vh;
+            position: fixed;
+            z-index: 2;
+           background-color: #0c1022;
+           width: 100vw;
+           padding-inline: 5.75rem;
+           padding-block: 1.5rem;
+           top: 0;
         }
 
         header h1 {
@@ -24,7 +30,7 @@
             
         }
 
-        header,.hero-section, .main-categories-container
+        .hero-section, .main-categories-container
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -120,19 +126,35 @@
 
         .main-categories-container {
             display: flex;
+            column-gap: 5rem;
         }
 
         .card {
             background-color: rgb(255, 21, 0);
             border-radius: 2rem;
-            padding: 2rem 1.5rem;
+            padding: 2rem 2rem;
         }
 
         .categories-content {
             padding-block: 4rem;
+            align-self: center;
+        }
+        .categories-content h2{
+            font-size: 2rem;
         }
 
-        .card h4, .categories-content p {
+        .categories-content p{
+            line-height: 1.5;  
+            margin-block: 2rem;
+      
+        }
+
+        .learn-more-btn{
+            padding: 1rem;
+            border: 1px solid transparent;
+        }
+
+        .card h4 {
             margin-block: 1rem;
         }
 
@@ -153,22 +175,23 @@
 
 
 
-
-    
-
         @media screen and (max-width:768px) {
-            header,.hero-section,.categories-section
-            {
-                margin-inline: 1rem;
+
+    /* Navbar section styling  */
+            .hero-section,.main-categories-container{
+                margin-inline: 0.5rem;
+            }
+
+            header{
+                padding-inline: 1.8rem !important;
+                padding-block: 0.78rem;
             }
 
             .hero-section {
                 margin-top: 1.5rem;
-            }
-
-            .hero-section {
                 text-align: center;
             }
+
 
             .desktop-nav {
                 display: none;
@@ -221,9 +244,9 @@
                 margin-top: 2vh;
                 align-self: center;
             }
-
-            .hero-section
-            {
+ 
+    /* Hero section style */
+            .hero-section{
                 display: grid;
                 grid-template-columns: 1fr;
             }
@@ -248,9 +271,42 @@
                 display: grid;
             }
 
+    /* Categories section  */
+            .main-categories-container {
+                display: block;
+                 margin-bottom: 3rem;
+                 padding-inline: 1rem ;
             
+            }
             
+            .cards {
+                grid-template-columns: repeat(2,1fr);
+                top: 0;   
+                gap:0.5rem ;
+
+            }
+            
+            .categories-section{
+                margin-block: 5rem;
+                padding-bottom: 0.5rem;
+            }
+
+            .card {
+                padding: 0.5rem;
+                border-radius: 1.2rem;
+                
+            }
+
+            .card img{
+                
+                width: 100px;
+            }
+    
         }
+
+
+
+
 
 
         @media screen and (min-width:500px) and (max-width:768px) {
