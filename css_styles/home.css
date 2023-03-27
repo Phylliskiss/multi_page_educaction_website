@@ -121,7 +121,7 @@
 
 /* Categories section styles */
         .categories-section {
-            background-color: rgb(149, 185, 248);
+            background-color: rgb(1, 9, 30);
         }
 
         .main-categories-container {
@@ -130,7 +130,7 @@
         }
 
         .card {
-            background-color: rgb(255, 21, 0);
+            background-color:rgb(2, 15, 53);
             border-radius: 2rem;
             padding: 2rem 2rem;
         }
@@ -177,7 +177,7 @@
 
         @media screen and (max-width:768px) {
 
-    /* Navbar section styling  */
+        /* Navbar section styling  */
             .hero-section,.main-categories-container{
                 margin-inline: 0.5rem;
             }
