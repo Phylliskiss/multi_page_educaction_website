@@ -335,6 +335,11 @@
                 
                 width: 100px;
             }
+            .course-cards
+            {
+                grid-template-columns: 1fr;
+                padding-inline: 1rem;
+            }
     
         }
 
