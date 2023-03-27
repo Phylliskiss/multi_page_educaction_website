@@ -30,8 +30,7 @@
             
         }
 
-        .hero-section, .main-categories-container
-        {
+        .hero-section, .main-categories-container, .popular-courses-main{
             max-width: 78rem;
             margin-inline: auto;
         }
@@ -171,6 +170,41 @@
             font-size: 0.85rem;
         }
 
+
+        /* popular courses Section  */
+        .popular-courses-main{
+            margin-top: 10rem;
+        }
+
+        .popular-courses-main h2{
+            text-align: center;
+        }
+
+        .course-cards{
+            margin-block: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+        }
+
+        .course-card{
+            text-align: center;
+            background-color: rgba(67, 52, 236, 0.394);
+            padding-block: 3rem;
+            
+            
+        }
+        .course-card:hover{
+            background: transparent;
+            border: 1px solid rgba(67, 52, 236)
+            
+        }
+
+        .course-card p{
+            padding: 1rem;
+            line-height: 1.8;
+            
+        }
 
 
 
