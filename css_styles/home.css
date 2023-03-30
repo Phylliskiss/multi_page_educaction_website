@@ -7,6 +7,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Declaring CSS variables */
+    :root {
+        --deep-blue: #0c1022;
+        --orange-red: #ff5619;
+        --white: white;
+    }
+
 /* Navbar  Style  */
 
         header {
@@ -14,7 +21,7 @@
             justify-content: space-between;
             position: fixed;
             z-index: 2;
-           background-color: #0c1022;
+           background-color: var(--deep-blue);
            width: 100vw;
            padding-inline: 5.75rem;
            padding-block: 1.5rem;
@@ -25,12 +32,16 @@
             align-self: center;
         }
         body{
-            background-color: #0c1022;
+            background-color: var(--deep-blue);
             color: white;
             
         }
 
-        .hero-section, .main-categories-container, .popular-courses-main{
+        .hero-section, 
+        .main-categories-container, 
+        .popular-courses-main,
+        .faq-section
+        {
             max-width: 78rem;
             margin-inline: auto;
         }
@@ -176,7 +187,7 @@
             margin-top: 10rem;
         }
 
-        .popular-courses-main h2{
+        .popular-courses-main h2, .faq-section h2{
             text-align: center;
         }
 
@@ -206,6 +217,44 @@
             
         }
 
+/* FAQ section styles */
+        .faq-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-block: 4rem;
+            gap: 1rem;
+        }
+
+        .faq-question {
+            display: flex;
+            gap: 1rem;
+            background-color: var(--orange-red);
+            padding: 1.5rem;
+        }
+
+        .faq-answer {
+            background-color: #F9B79F;
+            color: var(--deep-blue);
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .minus-sign {
+            display: none;
+        }
+
+        
+
+
+
+    
+
+        
+    
 
 
 
