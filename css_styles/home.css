@@ -40,7 +40,8 @@
         .hero-section, 
         .main-categories-container, 
         .popular-courses-main,
-        .faq-section
+        .faq-section,
+        .testimonials-section
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -247,6 +248,52 @@
             display: none;
         }
 
+
+/* Testimonials Section */
+
+        .testimonial-inner {
+            
+            margin-bottom: 1rem;
+            text-align: center;
+           
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid var(--orange-red);
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        .testimonial-image img{
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+        }
+
+        .testimonial {
+            background-color: var(--orange-red);
+            padding: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -1rem;
+            left: 48%;
+            width: 50px;
+            height: 50px;
+            background-color: var(--orange-red);
+            z-index: -1;
+            transform: rotate(45deg);
+        }
+
         
 
 
@@ -258,10 +305,10 @@
 
 
 
-        @media screen and (max-width:768px) {
+    @media screen and (max-width:768px) {
 
         /* Navbar section styling  */
-            .hero-section,.main-categories-container{
+            .hero-section,.main-categories-container, .faq-section {
                 margin-inline: 0.5rem;
             }
 
@@ -389,10 +436,15 @@
                 grid-template-columns: 1fr;
                 padding-inline: 1rem;
             }
+
+            /* FAQ section */
+            .faq-container {
+                grid-template-columns: 1fr;
+            }
     
         }
 
-
+        
 
 
 
