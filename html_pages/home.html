@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="../css_styles/home.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
 <body>
 
@@ -213,10 +217,11 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="testimonial-container">
-            <div class="testimonial-inner">
-                <div class="testimonial-image">
+    <section class="testimonials-section mySwiper">
+        <h2>Student's Testimonial</h2>
+        <div class="testimonial-container swiper-wrapper">
+            <div class="testimonial-inner swiper-slide">
+            <div class="testimonial-image">
                     <img src="../images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="">
                 </div>
                 <div class="testimonial-profile">
@@ -227,7 +232,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
                 </div>
             </div>
-            <div class="testimonial-inner">
+            <div class="testimonial-inner swiper-slide">
                 <div class="testimonial-image">
                     <img src="../images/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg" alt="">
                 </div>
@@ -239,7 +244,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
                 </div>
             </div>
-            <div class="testimonial-inner">
+            <div class="testimonial-inner swiper-slide">
                 <div class="testimonial-image">
                     <img src="../images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
                 </div>
@@ -251,10 +256,68 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
                 </div>
             </div>
+            <div class="testimonial-inner swiper-slide">
+                <div class="testimonial-image">
+                    <img src="../images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
+                </div>
+                <div class="testimonial-profile">
+                    <h5>Phyllis</h5>
+                    <h6>Frontend-Developer</h6>
+                </div>
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
+                </div>
+            </div>
+            <div class="testimonial-inner swiper-slide">
+            <div class="testimonial-image">
+                    <img src="../images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
+                </div>
+                <div class="testimonial-profile">
+                    <h5>Daniel</h5>
+                    <h6>Frontend-Developer</h6>
+                </div>
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
+                </div>
+            </div>
+            <div class="testimonial-inner swiper-slide">
+                <div class="testimonial-image">
+                    <img src="../images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
+                </div>
+                <div class="testimonial-profile">
+                    <h5>Rabbi</h5>
+                    <h6>Frontend-Developer</h6>
+                </div>
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel ad cumque quis dignissimos ratione in explicabo mollitia qui, id optio officiis, soluta deserunt iusto ullam veniam molestiae provident voluptates, ipsa odit eius vitae? Facere veritatis vel dignissimos corrupti voluptates!</p>
+                </div>
+            </div>
+           
         </div>
+        <div class="swiper-pagination"></div>
     </section>
+   
     </main>
-    
-    <script src="../home.js"></script>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints:
+          {
+            768:
+            {
+                slidesPerView: 3,
+            }
+          }
+        });
+      </script>
+       <script src="../home.js"></script>
 </body>
 </html>
