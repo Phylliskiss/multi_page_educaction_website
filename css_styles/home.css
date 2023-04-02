@@ -7,6 +7,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Declaring CSS variables */
+    :root {
+        --deep-blue: #0c1022;
+        --orange-red: #ff5619;
+        --white: white;
+    }
+
 /* Navbar  Style  */
 
         header {
@@ -14,7 +21,7 @@
             justify-content: space-between;
             position: fixed;
             z-index: 2;
-           background-color: #0c1022;
+           background-color: var(--deep-blue);
            width: 100vw;
            padding-inline: 5.75rem;
            padding-block: 1.5rem;
@@ -25,12 +32,17 @@
             align-self: center;
         }
         body{
-            background-color: #0c1022;
+            background-color: var(--deep-blue);
             color: white;
             
         }
 
-        .hero-section, .main-categories-container, .popular-courses-main{
+        .hero-section, 
+        .main-categories-container, 
+        .popular-courses-main,
+        .faq-section,
+        .testimonials-section
+        {
             max-width: 78rem;
             margin-inline: auto;
         }
@@ -176,7 +188,7 @@
             margin-top: 10rem;
         }
 
-        .popular-courses-main h2{
+        .popular-courses-main h2, .faq-section h2{
             text-align: center;
         }
 
@@ -206,13 +218,108 @@
             
         }
 
+/* FAQ section styles */
+        .faq-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-block: 4rem;
+            gap: 1rem;
+        }
+
+        .faq-question {
+            display: flex;
+            gap: 1rem;
+            background-color: var(--orange-red);
+            padding: 1.5rem;
+        }
+
+        .faq-answer {
+            background-color: #F9B79F;
+            color: var(--deep-blue);
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .minus-sign {
+            display: none;
+        }
+
+
+/* Testimonials Section */
+.testimonials-section h2{
+    text-align: center;
+    padding-block: 2.2rem;
+}
+        .testimonial-inner {
+            
+            margin-bottom: 1rem;
+            text-align: center;
+           
+        }
+
+        .testimonial-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 10px solid var(--orange-red);
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        .testimonial-image img{
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+        }
+
+        .testimonial {
+            background-color: var(--orange-red);
+            padding: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 47%;
+            top: -1rem;
+            background: linear-gradient(135deg, rgba(253,185,29,1) 0%,rgba(255,86,25,1) 30%);
+            z-index: -1;
+            transform: rotate(45deg);
+        }
+        .testimonials-section{
+            overflow: hidden;
+            position: relative;
+        }
+        .testimonial-container
+        {
+            margin-block: 2rem;
+        }
+
+        
 
 
 
-        @media screen and (max-width:768px) {
+    
+
+        
+    
+
+
+
+    @media screen and (max-width:768px) {
 
         /* Navbar section styling  */
-            .hero-section,.main-categories-container{
+            .hero-section,.main-categories-container, .faq-section {
                 margin-inline: 0.5rem;
             }
 
@@ -335,10 +442,20 @@
                 
                 width: 100px;
             }
+            .course-cards
+            {
+                grid-template-columns: 1fr;
+                padding-inline: 1rem;
+            }
+
+            /* FAQ section */
+            .faq-container {
+                grid-template-columns: 1fr;
+            }
     
         }
 
-
+        
 
 
 
