@@ -189,14 +189,14 @@
 
         .course-card{
             text-align: center;
-            background-color: rgba(67, 52, 236, 0.394);
+            background-color: rgb(2, 15, 53);
             padding-block: 3rem;
             
             
         }
         .course-card:hover{
             background: transparent;
-            border: 1px solid rgba(67, 52, 236)
+            border: 1px solid rgb(2, 15, 53);
             
         }
 
