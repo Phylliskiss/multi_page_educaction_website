@@ -42,7 +42,7 @@
         .main-categories-container, 
         .popular-courses-main,
         .faq-section,
-        .testimonials-section
+        .testimonials-section, .footer-section
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -202,14 +202,22 @@
 
         .course-card{
             text-align: center;
+<<<<<<< HEAD
             background-color: var(--blue-bg);
+=======
+            background-color: rgb(2, 15, 53);
+>>>>>>> 1188bce82e54c659b4e6952764ca4749058c2582
             padding-block: 3rem;
             
             
         }
         .course-card:hover{
             background: transparent;
+<<<<<<< HEAD
             border: 1px solid var(--blue-bg)
+=======
+            border: 1px solid rgb(2, 15, 53);
+>>>>>>> 1188bce82e54c659b4e6952764ca4749058c2582
             
         }
 
@@ -307,20 +315,74 @@
         }
 
         
+        /* Footer Section style */
+        .footer-section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6rem;
+            padding-block: 2rem;
+
+        }
 
 
+        footer{
+            background-color: var(--orange-red);
+            margin-top: 5rem;
+        }
 
+        li{
+            list-style: none;
+            padding: 0.5rem 0;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            color: var(--white);
+
+        }
     
+        .contact-section p{
+            padding-block: 0.2rem;
+        }
 
+        .socials{
+            padding-block: 2rem;
+            /* display: flex;
+            gap: 1rem; */
+        }
         
+    /* child selector can be used to achieve the same display flex code effect as above */
+        /* .socials svg:nth-child(2),  .socials svg:nth-child(4){
+            margin-inline: 1rem;
+        } */
     
+        .egator-section p{
+            line-height: 1.5;
+            padding-block: 2rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     @media screen and (max-width:768px) {
 
         /* Navbar section styling  */
-            .hero-section,.main-categories-container, .faq-section {
+            .hero-section,.main-categories-container, .faq-section,  .footer-section{
                 margin-inline: 0.5rem;
             }
 
@@ -453,6 +515,16 @@
             .faq-container {
                 grid-template-columns: 1fr;
             }
+
+            /* Footer Section  */
+             
+            .footer-section{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding-block: 2rem;
+
+            }
+
     
         }
 
@@ -477,4 +549,7 @@
 
 
 
-
+/* footer span{
+    text-align: center;
+    border: 2rem solid blue;
+} */
