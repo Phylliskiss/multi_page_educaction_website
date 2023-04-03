@@ -12,6 +12,7 @@
         --deep-blue: #0c1022;
         --orange-red: #ff5619;
         --white: white;
+        --blue-bg: rgba(67, 52, 236, 0.394);
     }
 
 /* Navbar  Style  */
@@ -60,7 +61,7 @@
         }
 
         a:hover{
-            color: rgb(255, 86, 25);
+            color: var(--orange-red);
             transition: color 500ms;
         }
 
@@ -103,7 +104,7 @@
 
         .button
         {
-            background-color: rgb(200, 54, 0);
+            background-color: var(--orange-red);
             border: 1px solid transparent;
             padding: 1rem 1.5rem;
             color: #fff;
@@ -132,7 +133,7 @@
 
 /* Categories section styles */
         .categories-section {
-            background-color: rgb(1, 9, 30);
+            background-color: var(--deep-blue);
         }
 
         .main-categories-container {
@@ -141,7 +142,7 @@
         }
 
         .card {
-            background-color:rgb(2, 15, 53);
+            background-color:var(--deep-blue);
             border-radius: 2rem;
             padding: 2rem 2rem;
         }
@@ -201,14 +202,14 @@
 
         .course-card{
             text-align: center;
-            background-color: rgba(67, 52, 236, 0.394);
+            background-color: var(--blue-bg);
             padding-block: 3rem;
             
             
         }
         .course-card:hover{
             background: transparent;
-            border: 1px solid rgba(67, 52, 236)
+            border: 1px solid var(--blue-bg)
             
         }
 
@@ -234,7 +235,7 @@
         }
 
         .faq-answer {
-            background-color: #F9B79F;
+            background-color: var(--orange-red);
             color: var(--deep-blue);
             padding: 1.5rem;
             display: none;
@@ -360,8 +361,8 @@
                 right: 0;
                 height: 100%;
                 width: 70%;
-                background-color: #FCF6F5FF;
-                color: #0c1022;
+                background-color: var(--white);
+                color: var(--blue-bg);
             } 
 
             .mobile-nav {
@@ -372,7 +373,7 @@
             }
 
             .mobile-nav a {
-                color: #0c1022;
+                color: var(--deep-blue);
                 font-size: 1.75rem;
                 font-weight: 400;
             }

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Declaring CSS variables */
+    :root {
+        --deep-blue: #0c1022;
+        --orange-red: #ff5619;
+        --white: white;
+        --blue-bg: rgba(67, 52, 236, 0.394);
+    }
+
+/* Navbar  Style  */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 2;
+           background-color: var(--deep-blue);
+           width: 100vw;
+           padding-inline: 5.75rem;
+           padding-block: 1.5rem;
+           top: 0;
+        }
+
+        header h1 {
+            align-self: center;
+        }
+        body{
+            background-color: var(--deep-blue);
+            color: white;
+            
+        }
+        nav {
+            align-self: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem ;
+            font-weight: 500;
+        }
+
+        a:hover{
+            color: var(--orange-red);
+            transition: color 500ms;
+        }
+
+        .menu-open {
+            font-size: 2.5rem; 
+            display: none;
+        }
+
+        .transparent-background {
+            display: none;
+        }
+
+        .mobile-nav-container {
+            display: none;
+        }
+
+        .about-hero
+            {
+                max-width: 78rem;
+                margin-inline: auto;
+            }
+        
+        /**About Hero Section Styling**/
+        .about-hero{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 7rem;
+            margin-block: 5rem;
+        }
+        .about-hero-content{
+           align-self: center;
+        }
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:768px) {
+
+            /* Navbar section styling  */
+                .hero-section,.main-categories-container, .faq-section {
+                    margin-inline: 0.5rem;
+                }
+    
+                header{
+                    padding-inline: 1.8rem !important;
+                    padding-block: 0.78rem;
+                }
+    
+                .hero-section {
+                    margin-top: 1.5rem;
+                    text-align: center;
+                }
+    
+    
+                .desktop-nav {
+                    display: none;
+                }
+    
+                .menu-open {
+                    display: block;
+                    transform: translateY(-7%);
+                }
+    
+                .transparent-background {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.71);
+                    z-index: 1000;
+                }
+    
+                .mobile-nav-container {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 70%;
+                    background-color: var(--white);
+                    color: var(--blue-bg);
+                } 
+    
+                .mobile-nav {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+                    margin-top: 6rem;
+                }
+    
+                .mobile-nav a {
+                    color: var(--deep-blue);
+                    font-size: 1.75rem;
+                    font-weight: 400;
+                }
+    
+                .menu-close {
+                    font-size: 2.5rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 1rem;
+                    margin-top: 2vh;
+                    align-self: center;
+                }
+            }    
