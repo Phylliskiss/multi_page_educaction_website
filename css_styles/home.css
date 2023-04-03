@@ -202,22 +202,14 @@
 
         .course-card{
             text-align: center;
-<<<<<<< HEAD
             background-color: var(--blue-bg);
-=======
-            background-color: rgb(2, 15, 53);
->>>>>>> 1188bce82e54c659b4e6952764ca4749058c2582
             padding-block: 3rem;
             
             
         }
         .course-card:hover{
             background: transparent;
-<<<<<<< HEAD
             border: 1px solid var(--blue-bg)
-=======
-            border: 1px solid rgb(2, 15, 53);
->>>>>>> 1188bce82e54c659b4e6952764ca4749058c2582
             
         }
 
