@@ -82,8 +82,51 @@
         .about-hero-content{
            align-self: center;
         }
-       
-
+        .about-hero-content h1{
+            font-size: 2.5rem;
+        }
+        .hero-p{
+            padding-block: 1.5rem;
+            line-height: 1.5;
+        }
+        .about-cards
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .about-card{
+            border: 2px solid transparent;
+            background-color: var(--blue-bg);
+            text-align: center;
+            padding-block: 0.8rem;
+            border-radius: 10px;
+        }
+        .about-card:hover
+        {
+            transform: scale(1.1);
+        }
+        .about-card h3{
+            padding-block: 1rem;
+        }
+       .svg
+       {
+        border-radius: 10px;
+        padding-block: 1rem;
+        margin-inline: 3rem;
+       }
+       .i-1
+       {
+        background-color: rgb(99, 99, 223);
+       }
+       .i-2
+       {
+        background-color: rgb(51, 207, 207);
+       }
+       .i-3
+       {
+        background-color: rgb(223, 99, 120);
+       }
 
 
 
@@ -113,7 +156,7 @@
         @media screen and (max-width:768px) {
 
             /* Navbar section styling  */
-                .hero-section,.main-categories-container, .faq-section {
+                .about-hero {
                     margin-inline: 0.5rem;
                 }
     
@@ -122,11 +165,22 @@
                     padding-block: 0.78rem;
                 }
     
-                .hero-section {
+                .about-hero{
                     margin-top: 1.5rem;
                     text-align: center;
                 }
-    
+                .about-cards{
+                    grid-template-columns: repeat(2,1fr);
+                }
+    .about-hero-image img
+    {
+        width: 80vw  !important;
+        transform:  translateY(15%)
+    }
+    .about-hero{
+        grid-template-columns: 1fr;
+        gap: 1.9rem;
+    }
     
                 .desktop-nav {
                     display: none;
