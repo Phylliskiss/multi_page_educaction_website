@@ -12,6 +12,7 @@
         --deep-blue: #0c1022;
         --orange-red: #ff5619;
         --white: white;
+        --blue-bg: rgba(67, 52, 236, 0.394);
     }
 
 /* Navbar  Style  */
@@ -41,7 +42,7 @@
         .main-categories-container, 
         .popular-courses-main,
         .faq-section,
-        .testimonials-section
+        .testimonials-section, .footer-section
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -60,7 +61,7 @@
         }
 
         a:hover{
-            color: rgb(255, 86, 25);
+            color: var(--orange-red);
             transition: color 500ms;
         }
 
@@ -103,7 +104,7 @@
 
         .button
         {
-            background-color: rgb(200, 54, 0);
+            background-color: var(--orange-red);
             border: 1px solid transparent;
             padding: 1rem 1.5rem;
             color: #fff;
@@ -132,7 +133,7 @@
 
 /* Categories section styles */
         .categories-section {
-            background-color: rgb(1, 9, 30);
+            background-color: var(--deep-blue);
         }
 
         .main-categories-container {
@@ -141,7 +142,7 @@
         }
 
         .card {
-            background-color:rgb(2, 15, 53);
+            background-color:var(--deep-blue);
             border-radius: 2rem;
             padding: 2rem 2rem;
         }
@@ -201,14 +202,14 @@
 
         .course-card{
             text-align: center;
-            background-color: rgba(67, 52, 236, 0.394);
+            background-color: var(--blue-bg);
             padding-block: 3rem;
             
             
         }
         .course-card:hover{
             background: transparent;
-            border: 1px solid rgba(67, 52, 236)
+            border: 1px solid var(--blue-bg)
             
         }
 
@@ -234,7 +235,7 @@
         }
 
         .faq-answer {
-            background-color: #F9B79F;
+            background-color: var(--orange-red);
             color: var(--deep-blue);
             padding: 1.5rem;
             display: none;
@@ -265,17 +266,6 @@
 
 
 /* Testimonials Section */
-
-        .testimonials-section {
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        .testimonial-container {
-            margin-block: 5rem;
-        }
-
-
 
         .testimonial-inner {
             margin-bottom: 1rem;
@@ -317,9 +307,25 @@
             background: linear-gradient(135deg, rgba(253,185,29,1) 0%,rgba(255,86,25,1) 30%);
             z-index: -1;
             transform: rotate(45deg);
-           
+        }
+        .testimonials-section{
+            overflow: hidden;
+            position: relative;
+        }
+        .testimonial-container
+        {
+            margin-block: 2rem;
         }
 
+        
+        /* Footer Section style */
+        .footer-section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6rem;
+            padding-block: 2rem;
+
+        }
 
         
 
@@ -327,15 +333,15 @@
 
     
 
-        
-    
+
+
 
 
 
     @media screen and (max-width:768px) {
 
         /* Navbar section styling  */
-            .hero-section,.main-categories-container, .faq-section {
+            .hero-section,.main-categories-container, .faq-section,  .footer-section{
                 margin-inline: 0.5rem;
             }
 
@@ -376,8 +382,8 @@
                 right: 0;
                 height: 100%;
                 width: 70%;
-                background-color: #FCF6F5FF;
-                color: #0c1022;
+                background-color: var(--white);
+                color: var(--blue-bg);
             } 
 
             .mobile-nav {
@@ -388,7 +394,7 @@
             }
 
             .mobile-nav a {
-                color: #0c1022;
+                color: var(--deep-blue);
                 font-size: 1.75rem;
                 font-weight: 400;
             }
@@ -468,6 +474,16 @@
             .faq-container {
                 grid-template-columns: 1fr;
             }
+
+            /* Footer Section  */
+             
+            .footer-section{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding-block: 2rem;
+
+            }
+
     
         }
 
@@ -492,4 +508,7 @@
 
 
 
-
+/* footer span{
+    text-align: center;
+    border: 2rem solid blue;
+} */
