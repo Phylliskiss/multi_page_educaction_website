@@ -188,7 +188,7 @@
             margin-top: 10rem;
         }
 
-        .popular-courses-main h2, .faq-section h2{
+        .popular-courses-main h2, .faq-section h2, .testimonials-section h2{
             text-align: center;
         }
 
@@ -240,19 +240,44 @@
             display: none;
         }
 
-        .faq-answer.show {
-            display: block;
-        }
-
         .minus-sign {
             display: none;
         }
 
+        /* .faq-answer.show {
+            opacity: 1;
+            visibility: visible;
+            max-height: 100%;
+            transform: translateY(-10px);
+        }
+
+        .minus {
+            display: none;
+        }
+        
+        .minus.show {
+            display: block;
+        }
+
+        .plus-sign.hide {
+            display: none;
+        } */
+
 
 /* Testimonials Section */
 
+        .testimonials-section {
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .testimonial-container {
+            margin-block: 5rem;
+        }
+
+
+
         .testimonial-inner {
-            
             margin-bottom: 1rem;
             text-align: center;
            
@@ -276,7 +301,7 @@
 
         .testimonial {
             background-color: var(--orange-red);
-            padding: 2rem;
+            padding: 1rem;
             margin-top: 3rem;
             position: relative;
         }
@@ -287,13 +312,14 @@
             width: 60px;
             height: 60px;
             position: absolute;
-            left: 47%;
+            left: 43%;
             top: -1rem;
             background: linear-gradient(135deg, rgba(253,185,29,1) 0%,rgba(255,86,25,1) 30%);
             z-index: -1;
             transform: rotate(45deg);
            
         }
+
 
         
 
