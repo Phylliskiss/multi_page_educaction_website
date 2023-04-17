@@ -86,6 +86,7 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 1rem;
+            row-gap: 2rem;
         }
 
         .course-card{
@@ -96,6 +97,7 @@
             
             
         }
+
         .course-card:hover{
             background: transparent;
             border: 1px solid var(--blue-bg)
@@ -105,5 +107,81 @@
         .course-card p{
             padding: 1rem;
             line-height: 1.8;
+            
+        }
+        /* Footer Section style */
+        .footer-section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6rem;
+            padding-block: 2rem;
+
+        }
+
+
+        footer{
+            background-color: var(--orange-red);
+            margin-top: 5rem;
+        }
+
+        li{
+            list-style: none;
+            padding: 0.5rem 0;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            color: var(--white);
+
+        }
+    
+        .contact-section p{
+            padding-block: 0.2rem;
+        }
+
+        .socials{
+            padding-block: 2rem;
+            /* display: flex;
+            gap: 1rem; */
+        }
+        
+    /* child selector can be used to achieve the same display flex code effect as above */
+        /* .socials svg:nth-child(2),  .socials svg:nth-child(4){
+            margin-inline: 1rem;
+        } */
+    
+        .egator-section p{
+            line-height: 1.5;
+            padding-block: 2rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Media Queries*/
+        @media screen and (max-width: 768px){
+            .course-cards
+            {
+                grid-template-columns: 1fr;
+                padding-inline: 1rem;
+            }
+            .footer-section{
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding-block: 2rem;
+
+            }
+
+    
+
             
         }
