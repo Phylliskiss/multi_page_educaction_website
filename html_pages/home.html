@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
-    <!-- SWIPER_JS For Testimonial Slide -->
+    
 
     <link rel="stylesheet" href="../css_styles/home.css">
+
+<!-- SWIPER_JS For Testimonial Slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -17,10 +22,10 @@
         <h1> EGATOR</h1>
         <span class="menu-open" id="menuOpen">&#9776;</span>
         <nav class="desktop-nav">
-            <a href="#">Home</a>
+            <a href="../html_pages/home.html">Home</a>
             <a href="../html_pages/about.html">About</a>
-            <a href="#">Courses</a>
-            <a href="#">Contact</a>
+            <a href="../html_pages/courses.html">Courses</a>
+            <a href="../html_pages/contact.html">Contact</a>
         </nav>
          
         <div class="transparent-background" id="transparentBackground">
@@ -39,7 +44,8 @@
  
     <main>
     <!-- Hero Section -->
-        <section class="hero-section">   
+        <section class="hero-section" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">   
                 <div class="home-content">
                     <h1>Grow your skills to advance your career path</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis illum aliquam suscipit? Ipsam saepe sit placeat id ipsum dolor sit amet.</p>
@@ -127,7 +133,8 @@
         </div>
     </section>
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="1500">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="question-answer">
@@ -357,7 +364,7 @@
         <p style="text-align: center"> &copy; Sunday Coding Practice 2023</p>
     </footer>
 
-   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -375,6 +382,8 @@
             }
           }
         });
+
+        AOS.init();
       </script>
     <script src="../home.js"></script>
 </body>

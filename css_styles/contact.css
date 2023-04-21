@@ -15,63 +15,12 @@
         --blue-bg: rgba(67, 52, 236, 0.394);
     }
 
-/* Navbar  Style  */
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            position: fixed;
-            z-index: 2;
-           background-color: var(--deep-blue);
-           width: 100vw;
-           padding-inline: 5.75rem;
-           padding-block: 1.5rem;
-           top: 0;
-        }
-
-        header h1 {
-            align-self: center;
-        }
-        body{
-            background-color: var(--deep-blue);
-            color: white;
-            
-        }
-        nav {
-            align-self: center;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin-left: 2rem ;
-            font-weight: 500;
-        }
-
-        a:hover{
-            color: var(--orange-red);
-            transition: color 500ms;
-        }
-
-        .menu-open {
-            font-size: 2.5rem; 
-            display: none;
-        }
-
-        .transparent-background {
-            display: none;
-        }
-
-        .mobile-nav-container {
-            display: none;
-        }
-
         /* Contact Card */
         .contact-container {
             margin-block: 12rem;
-            background-color: #ff5619;
+            /* background-color: #fffb19; */
             position: relative;
-            height: 25rem;
+            height: 30rem;
         }
 
         .contact-card-container {
@@ -79,13 +28,27 @@
             width: 30vw;
             position: absolute;
             top: -5rem;
-            left: 10%;
+            height: 41rem;
+            left: 5%;
+            padding-inline: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .contact-description {
+            padding-block: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: .5rem;
         }
 
         .form-container {
-            background-color: bisque;
+            background-color: rgb(255, 228, 196);
             padding: 2rem;
             height: 100%;
+            border-radius: 1.5rem;
         }
 
         .form-container form {
@@ -96,3 +59,67 @@
             padding-block: 2rem;
             padding-inline: 0 3rem;
         }
+
+        .name {
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .name input {
+            width: 250px;
+            padding: .75rem;
+        }
+
+        input[type="email"]{
+            width: 100%;
+            padding: .75rem;
+        }
+
+        .contact-socials {
+            padding-bottom: 2rem;
+        }
+
+        .contact-socials svg {
+            background-color: var(--deep-blue);
+            border-radius: 50%;
+            padding: .25rem;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .contact-card-container{
+                position: static;
+                height: 100%;
+                width: 100%;
+            }
+
+            .contact-container {
+                height: 100%;
+                margin-block: 6rem;
+            }
+
+            .form-container {
+                border-radius: 0;
+            }
+
+            .form-container form {
+                width: 100%;
+                padding-inline: 0;
+            }
+
+            .name {
+                display: block;
+            }
+
+            .name input {
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+
+            .form-container form .button {
+                width: 60% !important;
+                margin-inline: auto;
+            }
+        }
+
