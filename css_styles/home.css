@@ -42,7 +42,8 @@
         .main-categories-container, 
         .popular-courses-main,
         .faq-section,
-        .testimonials-section, .footer-section
+        .testimonials-section, .footer-section,
+        .contact-container
         {
             max-width: 78rem;
             margin-inline: auto;

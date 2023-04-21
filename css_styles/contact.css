@@ -65,3 +65,34 @@
         .mobile-nav-container {
             display: none;
         }
+
+        /* Contact Card */
+        .contact-container {
+            margin-block: 12rem;
+            background-color: #ff5619;
+            position: relative;
+            height: 25rem;
+        }
+
+        .contact-card-container {
+            background-color: rgb(0, 132, 255);
+            width: 30vw;
+            position: absolute;
+            top: -5rem;
+            left: 10%;
+        }
+
+        .form-container {
+            background-color: bisque;
+            padding: 2rem;
+            height: 100%;
+        }
+
+        .form-container form {
+            display: grid;
+            gap: 1rem;
+            width: 40rem;
+            margin-left: auto;
+            padding-block: 2rem;
+            padding-inline: 0 3rem;
+        }
