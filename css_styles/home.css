@@ -234,21 +234,31 @@
             gap: 1rem;
             background-color: var(--orange-red);
             padding: 1.5rem;
+            cursor: pointer;
         }
 
         .faq-answer {
             background-color: var(--orange-red);
-            color: var(--deep-blue);
-            padding: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .faq-answer.expanded {
+            padding-inline: 3rem 4rem;
+            padding-bottom: 1.5rem;
+            max-height: 150px;
+        }
+
+        .plus-sign.none {
             display: none;
         }
 
-        .faq-answer.show {
+        .minus-sign{
+            display: none;
+        }
+
+        .minus-sign.active, .plus-sign.show {
             display: block;
-        }
-
-        .minus-sign {
-            display: none;
         }
 
 
@@ -293,7 +303,7 @@
             width: 60px;
             height: 60px;
             position: absolute;
-            left: 47%;
+            left: 43%;
             top: -1rem;
             background: linear-gradient(135deg, rgba(253,185,29,1) 0%,rgba(255,86,25,1) 30%);
             z-index: -1;
@@ -306,6 +316,10 @@
         .testimonial-container
         {
             margin-block: 2rem;
+        }
+
+        .swiper-pagination {
+            z-index: -999 !important;
         }
 
         

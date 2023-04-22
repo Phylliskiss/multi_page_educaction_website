@@ -35,6 +35,7 @@
             text-align: center;
             padding-block: 0.8rem;
             border-radius: 10px;
+            transition: transform 150ms;
         }
         .about-card:hover
         {
@@ -156,112 +157,65 @@
           opacity: 1;
         }
       }
-      
-      
-      
 
+      @media screen and (max-width: 768px) {
+        .about-hero {
+            margin-inline: 0.5rem;
+        }
 
+        .about-hero{
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .about-cards{
+            grid-template-columns: repeat(2,1fr);
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        @media screen and (max-width:768px) {
-
-            /* Navbar section styling  */
-                .about-hero {
-                    margin-inline: 0.5rem;
-                }
-    
-                header{
-                    padding-inline: 1.8rem !important;
-                    padding-block: 0.78rem;
-                }
-    
-                .about-hero{
-                    margin-top: 1.5rem;
-                    text-align: center;
-                }
-                .about-cards{
-                    grid-template-columns: repeat(2,1fr);
-                }
-    .about-hero-image img
-    {
+        .about-hero-image img
+        {
         width: 80vw  !important;
         transform:  translateY(15%)
-    }
-    .about-hero{
+        }
+        .about-hero{
         grid-template-columns: 1fr;
         gap: 1.9rem;
-    }
-    
-                .desktop-nav {
-                    display: none;
-                }
-    
-                .menu-open {
-                    display: block;
-                    transform: translateY(-7%);
-                }
-    
-                .transparent-background {
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    right: 0;
-                    background-color: rgba(0, 0, 0, 0.71);
-                    z-index: 1000;
-                }
-    
-                .mobile-nav-container {
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 70%;
-                    background-color: var(--white);
-                    color: var(--blue-bg);
-                } 
-    
-                .mobile-nav {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 3rem;
-                    margin-top: 6rem;
-                }
-    
-                .mobile-nav a {
-                    color: var(--deep-blue);
-                    font-size: 1.75rem;
-                    font-weight: 400;
-                }
-    
-                .menu-close {
-                    font-size: 2.5rem;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-right: 1rem;
-                    margin-top: 2vh;
-                    align-self: center;
-                }
-            }    
+        }
+
+        .team-cards {
+            grid-template-columns: 1fr;
+            margin-inline: .5rem;
+        }
+
+        .team-card {
+            border-radius: .5rem;
+        }
+      }
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
